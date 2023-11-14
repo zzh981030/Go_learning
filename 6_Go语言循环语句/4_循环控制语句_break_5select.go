@@ -13,12 +13,12 @@ func main() {
 	ch2 := make(chan int)
 
 	go func() {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Millisecond)
 		ch1 <- 0
 	}()
 
 	go func() {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Millisecond)
 		ch2 <- 1
 	}()
 

@@ -4,7 +4,10 @@ for 循环的 range 格式可以省略 key 和 value，如下实例：
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	map1 := make(map[int]float32)
@@ -16,6 +19,7 @@ func main() {
 	// 读取 key 和 value
 	for key, value := range map1 {
 		fmt.Printf("key is: %d - value is: %f\n", key, value)
+		time.Sleep(1 * time.Second)
 	}
 
 	// 读取 key

@@ -22,7 +22,8 @@ end_mark: //这是一个标记的变量
 		fmt.Printf("i: %d\n", i)
 		for i2 := 11; i2 <= 13; i2++ {
 			fmt.Printf("i2: %d\n", i2)
-			break end_mark //跳到标记点的后方
+			//break end_mark //结束当前代码块，并跳到标记点的后方
 		}
+		break end_mark //结束当前代码块，并跳到标记点的后方
 	}
 }

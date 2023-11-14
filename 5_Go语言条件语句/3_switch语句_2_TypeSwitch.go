@@ -12,6 +12,7 @@ switch x.(type){
 	default: // 可选
 		statement(s);
 }
+//switch语句块中的default语句指，当前边的所有case都不满足的情况下，才执行的语句；如果前边有满足条件的case，则default不执行。
 */
 
 package main

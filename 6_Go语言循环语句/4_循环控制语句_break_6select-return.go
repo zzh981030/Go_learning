@@ -19,7 +19,7 @@ func process(ch chan int) { //将channel中的值作为参数导入
 		case val := <-ch: //使用channel中穿的参数值
 			fmt.Println("Received value:", val)
 			// 执行一些逻辑，即通道传进来的值符合下列条件时，执行return语句
-			if val == 1 {
+			if val == 8 {
 				return // 提前结束 select 语句的执行
 			}
 		default:
@@ -34,7 +34,7 @@ func main() {
 
 	go process(ch)
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(1 * time.Second)
 	ch <- 1 //将变量的值传输到chanel中
 	time.Sleep(1 * time.Second)
 	ch <- 3

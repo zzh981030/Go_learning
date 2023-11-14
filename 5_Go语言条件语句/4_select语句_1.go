@@ -46,11 +46,11 @@ func main() {
 	c2 := make(chan string)
 
 	go func() {
-		time.Sleep(1 * time.Second)
+		time.Sleep(1 * time.Millisecond)
 		c1 <- "one" //将变量“one”发送到通道c1中
 	}()
 	go func() {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Millisecond)
 		c2 <- "two" //将变量“two”发送到通道c2中
 	}()
 

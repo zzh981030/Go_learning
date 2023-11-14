@@ -22,7 +22,8 @@ func main() {
 		/* if 条件语句为 true 执行 */
 		if b == 200 {
 			/* if 条件语句为 true 执行 */
-			fmt.Printf("a 的值为 100 ， b 的值为 200\n")
+			//fmt.Printf("a 的值为 100 ， b 的值为 200\n")
+			fmt.Printf("a 的值为 %d ， b 的值为 %d\n", a, b)
 		}
 	}
 	fmt.Printf("a 值为 : %d\n", a)
