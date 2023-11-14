@@ -47,18 +47,18 @@ func main() {
 
 	go func() {
 		time.Sleep(1 * time.Second)
-		c1 <- "one"
+		c1 <- "one" //将变量“one”发送到通道c1中
 	}()
 	go func() {
 		time.Sleep(2 * time.Second)
-		c2 <- "two"
+		c2 <- "two" //将变量“two”发送到通道c2中
 	}()
 
 	for i := 0; i < 2; i++ {
 		select {
-		case msg1 := <-c1:
+		case msg1 := <-c1: //将通道c1中的数据赋值给变量msg1
 			fmt.Println("received", msg1)
-		case msg2 := <-c2:
+		case msg2 := <-c2: //将通道c2中的数据赋值给变量msg2
 			fmt.Println("received", msg2)
 		}
 	}
