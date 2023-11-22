@@ -13,7 +13,7 @@ import "fmt"
 
 func main() {
 	// Step 1: 创建数组
-	values := [][]int{}
+	values := [][]int{} //初始化二维数组，定义一个空二维数组
 
 	// Step 2: 使用 append() 函数向空的二维数组添加两行一维数组
 	row1 := []int{1, 2, 3} //定义一维数组row1
@@ -29,5 +29,6 @@ func main() {
 
 	// Step 4: 访问第一个元素
 	fmt.Println("第一个元素为：")
+	fmt.Println(len(values))
 	fmt.Println(values[0][0])
 }

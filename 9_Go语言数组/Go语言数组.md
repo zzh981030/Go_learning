@@ -87,6 +87,7 @@ var salary float32 = balance[9]
 var arrayName [ x ][ y ] variable_type
 ```
 variable_type 为 Go 语言的数据类型，arrayName 为数组名，二维数组可认为是一个表格，x 为行，y 为列，下图演示了一个二维数组 a 为三行四列：
+
 ![img.png](img.png)
 
 二维数组中的元素可通过 a[ i ][ j ] 来访问。
