@@ -15,4 +15,5 @@ func main() {
 
 	/* 使用指针访问值 */
 	fmt.Printf("*ip 变量的值: %d\n", *ip)
+	fmt.Printf("*ip 变量的值: %d\n", *&a)
 }
