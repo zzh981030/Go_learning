@@ -42,8 +42,8 @@ import (
 
 func main() {
 
-	c1 := make(chan string)
-	c2 := make(chan string)
+	c1 := make(chan string) //make函数创建一个动态内存
+	c2 := make(chan string) //make函数创建一个动态内存
 
 	go func() {
 		time.Sleep(1 * time.Millisecond)
